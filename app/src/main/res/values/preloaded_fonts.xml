@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aladin</item>
+        <item>@font/amarante</item>
+        <item>@font/amaranth</item>
+        <item>@font/bad_script</item>
+        <item>@font/bungee</item>
+        <item>@font/roboto_thin</item>
+        <item>@font/tienne</item>
+    </array>
+</resources>

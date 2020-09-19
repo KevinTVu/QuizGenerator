@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".STUDENT.Result">
+
+
+    <TextView
+        android:id="@+id/my_exam"
+        android:fontFamily="@font/aladin"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:text="Incomplete Quizzes"
+        android:textSize="36sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quiz_list"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:scrollbarSize="20dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/test_history"
+        android:layout_below="@+id/my_exam"
+        />
+
+    <TextView
+        android:fontFamily="@font/aladin"
+        android:id="@+id/completedQuizzesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:text="Completed Quizzes"
+        android:textSize="36sp"
+        android:layout_below="@id/quiz_list"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/completedQuizzesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:scrollbarSize="20dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/test_history"
+        android:layout_below="@+id/completedQuizzesTextView"
+        />
+
+
+    <Button
+        android:id="@+id/previous4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:text="Logout"
+        android:background="@drawable/back_button"
+        android:layout_alignEnd="@+id/my_exam"/>
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".ADMIN.QuizLayoutActivity">
+
+    <EditText
+        android:id="@+id/topicEditText"
+        android:layout_width="430dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Topic"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="#050505"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/amtOfQuestionEditText"
+        android:layout_width="430dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Amount of Questions"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="#050505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topicEditText" />
+
+    <EditText
+        android:id="@+id/timeLimitEditText"
+        android:layout_width="430dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Time Limit"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textColorHint="#050505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amtOfQuestionEditText" />
+
+    <Button
+        android:id="@+id/submitActivityQuizLayoutButton"
+        android:layout_width="153dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:text="Submit"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeLimitEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

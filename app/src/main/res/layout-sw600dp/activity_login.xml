@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".LoginActivity"
+
+    >
+
+    <ImageView
+        android:id="@+id/loginLogo"
+        android:layout_width="414dp"
+        android:layout_height="411dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/loginlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/user_background"
+        android:ems="10"
+        android:fontFamily="@font/aladin"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/user_background"
+        android:ems="10"
+        android:fontFamily="@font/aladin"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/login_form_details_medium"
+        android:textSize="18sp"
+        android:layout_below="@+id/txtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:columnCount="2"
+        android:orientation="vertical"
+        android:rowCount="1">
+
+        <TextView
+            android:id="@+id/notRegistered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:text="Don't have an account?"
+            android:textColor="@color/login_form_details"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/registerTextViewClickable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="@font/aladin"
+            android:text="@string/sign_up"
+            android:textColor="@color/login_form_details"
+            android:textColorHighlight="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+    </GridLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".ADMIN.CreateQuestionActivity">
+
+
+    <TextView
+        android:id="@+id/questionNumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/aladin"
+        android:text="Question  1"
+        android:layout_gravity="center"
+        android:textSize="70sp"/>
+
+    <EditText
+        android:id="@+id/questionEditText"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/type_your_question_here"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textColorHint="#050505" />
+
+
+    <EditText
+        android:id="@+id/choice1EditText"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Choice 1"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textColorHint="#050505" />
+
+
+
+    <EditText
+        android:id="@+id/choice2EditText"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Choice 2"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textColorHint="#050505" />
+
+    <EditText
+        android:id="@+id/choice3EditText"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Choice 3"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textColorHint="#050505" />
+
+    <EditText
+        android:id="@+id/correctChoiceEditText"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Correct answer"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textColorHint="#050505" />
+
+    <Button
+        android:id="@+id/submitQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit" />
+
+
+</LinearLayout>

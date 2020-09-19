@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context="ADMIN.AdminActivity"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    android:padding="12dp">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/aladin"
+        android:text="Admin Panel"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizImageView"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/adminLogo"
+        android:layout_width="375dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:contentDescription="logo"
+        android:src="@drawable/adminlogo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/createQuizButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/animation_button_2"
+        android:text="Create Quiz"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+    <Button
+        android:id="@+id/assignQuizButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/animation_button_1"
+        android:text="Assign a quiz"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+    <Button
+        android:id="@+id/gradeReportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/animation_button_4"
+        android:text="Grades"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/animation_button_3"
+        android:text="Log Out"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

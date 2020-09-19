@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/login_background"
+    tools:context=".STUDENT.Result">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <TextView
+            android:id="@+id/my_exam"
+            android:fontFamily="@font/aladin"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:text="Incomplete Quizzes"
+            android:textSize="36sp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/quiz_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarSize="20dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/test_history" />
+
+        <TextView
+            android:fontFamily="@font/aladin"
+            android:id="@+id/completedQuizzesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:text="Completed Quizzes"
+            android:textSize="36sp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/completedQuizzesRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:scrollbarSize="20dp"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/test_history"
+            />
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/previous4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:background="@drawable/back_button"
+        android:textSize="10sp"
+        android:text="Logout" />
+
+
+</RelativeLayout>

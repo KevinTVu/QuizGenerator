@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".STUDENT.GradesActivity">
+
+    <Button
+        android:id="@+id/gradeReportPrevious"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+    <TextView
+        android:id="@+id/gradeReportTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aladin"
+        android:padding="10dp"
+        android:text="Grade Report"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/subjectTextView"
+        android:layout_width="411dp"
+        android:layout_height="76dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aladin"
+        android:padding="10dp"
+        android:text="Topic"
+        android:textColor="#000000"
+
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradeReportTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/gradePercentageTextView"
+        android:layout_width="413dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aladin"
+        android:padding="10dp"
+        android:text="Percentage"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/letterGradeTextView"
+        android:layout_width="413dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aladin"
+        android:padding="10dp"
+        android:text="Letter Grade"
+        android:textColor="#000000"
+
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradePercentageTextView"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

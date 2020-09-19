@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/text_line"
+    tools:context=".STUDENT.Result">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/text_line"
+        android:fontFamily="@font/tienne"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/title"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/title"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="12sp"
+        android:padding="30dp"
+        android:text="@string/score_result"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/back_to_menu"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_menu"
+        android:text="@string/back_to_menu"
+        android:textAllCaps="false"
+        android:layout_below="@id/result"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/view_history"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_menu"
+        android:text="@string/view_answer"
+        android:layout_below="@id/back_to_menu"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_menu"
+        android:text="@string/logout"
+        android:layout_below="@+id/view_history"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/timeCount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/result"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/tienne"
+        android:text="@string/time_count"
+        android:textAlignment="center"
+        android:textColor="#137C0C"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/completeTimeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/result"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/tienne"
+        android:paddingBottom="10dp"
+        android:text="@string/count_title"
+        android:textAlignment="center"
+        android:textColor="#99000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
